@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header__icon tooltip">
+        <div class="header__icon_element"></div>
+        <div class="header__icon_element"></div>
+        <div class="header__icon_element"></div>
+        <span class="tooltiptext">Main menu</span>
+    </div>
+    <h2 class="header__title">📬 Mail App</h2>
+    </div>
+</header>
+<aside>
+    <button>🖊️ Compose</button>
+    <nav>
+        <app-sidebar-button text="Inbox"><slot class="nav__slot" name="icon">📥</slot></app-sidebar-button>
+        <app-sidebar-button text="Starred"><slot name="icon">⭐️</slot></app-sidebar-button>
+        <app-sidebar-button text="Snoozed"><slot name="icon">⏱</slot></app-sidebar-button>
+        <app-sidebar-button text="Sent"><slot name="icon">➡️</slot></app-sidebar-button>
+        <app-sidebar-button text="Drafts" unreadCount="1"><slot name="icon">📄</slot></app-sidebar-button>
+    </nav>
+</aside>
+</body>
+</html>
