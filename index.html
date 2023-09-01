@@ -23,9 +23,9 @@
     </div>
 </header>
 <aside>
-    <button>🖊️ Compose</button>
+    <button id="compose">🖊️ Compose</button>
     <nav>
-        <app-sidebar-button text="Inbox"><slot class="nav__slot" name="icon">📥</slot></app-sidebar-button>
+        <app-sidebar-button selected="true" text="Inbox"><slot class="nav__slot" name="icon">📥</slot></app-sidebar-button>
         <app-sidebar-button text="Starred"><slot name="icon">⭐️</slot></app-sidebar-button>
         <app-sidebar-button text="Snoozed"><slot name="icon">⏱</slot></app-sidebar-button>
         <app-sidebar-button text="Sent"><slot name="icon">➡️</slot></app-sidebar-button>
