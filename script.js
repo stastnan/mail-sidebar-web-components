@@ -15,7 +15,7 @@ appSidebarButtonTemplate.innerHTML = `
         border: none;
         display: flex;
         align-items: center;
-        border-radius: 0px 50px 50px 0px;
+        border-radius: 0 3rem 3rem 0;
         font-size: 1.2rem;
         display: flex;
         gap: 1rem;
@@ -35,7 +35,7 @@ appSidebarButtonTemplate.innerHTML = `
         display: inline-block;
         font-size: 0.9rem;
         color: rgb(106, 105, 105);
-        margin-left: 100px;
+        margin-left: 6.25rem;
     }
 
     </style>
